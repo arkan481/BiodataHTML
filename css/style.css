@@ -127,7 +127,7 @@ body {
 }
 
 .photocontainer img  {
-    width: 180px;
+    width: auto;
     height: 180px;
     border-radius: 60%;
 }

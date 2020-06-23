@@ -1,0 +1,245 @@
+/* ######## DEFAULT ######### */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f7fafc;
+    font-family: Roboto,arial;
+}
+
+.maincontainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ########### Side Bar Stylization ############## */
+
+.sidebar {
+    width: 60px;
+    height: 100%;
+    background-color:#006ca6;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideimgdiv {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sideimg {
+    width: 50%;
+    height: auto;
+    color: white;
+}
+
+/* ############### Biodata Container Stylization ########################### */
+
+.biodatacontainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #f7fafc;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid darkgrey;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.topimg {
+    width: 30px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.topcontainer p {
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+}
+
+.textcontainer {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+
+.textcontainer span {
+    margin-left: 30px;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+.textcontainer hr {
+    flex-grow: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.profwrapper {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.profilecontainer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: darkgrey 3px 3px 9px 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+.photocontainer {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: #e0e0e0 3px solid;
+    box-shadow: turquoise 24px;
+}
+
+.photocontainer img  {
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
+}
+
+.photocontainer span {
+    margin-top: 12px;
+}
+
+.sideprofcont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border-bottom: 3px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.row>p {
+    color: darkgray;
+}
+
+.belowp {
+    margin-top: 10px;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ht {
+    margin-right: 5px;
+    color: darkgray;
+}
+
+#sb1 {
+    background-color: whitesmoke;
+}
+
+#sb2:hover {
+    background-color: whitesmoke;
+}
+
+#sb3:hover {
+    background-color: whitesmoke;
+}
+
+
+
+/* ########## EDUCATION DIV ############## */
+
+
+
+/* ############ Mobile Stylization ############## */
+@media(max-width:930px) {
+
+    .textcontainer span {
+        margin: 0;
+    }
+
+    .maincontainer {
+        flex-direction: column-reverse;
+    }
+
+    .profilecontainer {
+        margin: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        box-shadow: unset;
+    }
+
+    .photocontainer {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .belowp {
+        flex-direction: column;
+        justify-content: unset;
+        height: auto;
+    }
+
+    .sidebar {
+        position: fixed;
+        bottom: 3vh;
+        width: 100%;
+        height: 40px;
+        flex-direction: row;
+        border-radius: unset;
+    }
+
+    .sidebar:hover {
+        display: flex;
+    }
+
+    .sideimg {
+        width: 30px;
+        height: auto;
+    }
+
+    .sideimgdiv {
+        margin: unset;
+    }
+}
